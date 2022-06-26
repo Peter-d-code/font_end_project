@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu; }
+
+body {
+  background-color: #E4E9ED;
+  width: 100%;
+  height: 100vh; }
+
+.container {
+  width: 80%;
+  height: 90vh;
+  background-color: #F5F6F6;
+  margin: 0 auto;
+  margin-top: 5vh;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr 2fr 2fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "nav nav" "head head" "main main" "footer footer"; }
+
+.nav {
+  background-color: transparent;
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around; }
+  .nav nav:nth-child(1) {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    height: 100%; }
+    .nav nav:nth-child(1) ul {
+      display: flex;
+      width: 100%;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      font-family: Ubuntu;
+      color: #8A8A8A;
+      font-size: 1.2em; }
+    .nav nav:nth-child(1) li:nth-child(1) {
+      margin-left: 10%;
+      background-image: url("./icons/blog.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 80px;
+      height: 80px; }
+  .nav nav:nth-child(2) {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: transparent; }
+    .nav nav:nth-child(2) ul {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      height: 100%;
+      background-color: transparent;
+      list-style-type: none; }
+      .nav nav:nth-child(2) ul li:nth-child(1n+1) {
+        width: 70px;
+        width: 70px;
+        margin-right: 5%;
+        background-image: url("./icons/fb.png");
+        background-position: center;
+        background-size: cover;
+        background-color: transparent; }
+      .nav nav:nth-child(2) ul li:nth-child(2) {
+        background-image: url("./icons/gmail.png"); }
+
+.head {
+  background-color: transparent;
+  grid-area: head;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .head input {
+    width: 35%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #FEFEFE;
+    margin-top: 1%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; }
+  .head div:nth-child(1) {
+    font-size: 2.6em;
+    width: 80%;
+    height: 40%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%; }
+  .head div:nth-child(4) {
+    background-color: transparent;
+    width: 90%;
+    height: 50%;
+    margin-top: 2%; }
+    .head div:nth-child(4) nav {
+      background-color: transparent;
+      width: 40%;
+      height: 100%; }
+      .head div:nth-child(4) nav ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        font-family: Ubuntu; }
+      .head div:nth-child(4) nav li:nth-child(4) {
+        color: #FF4E00; }
+  .head p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #909090;
+    width: 50%;
+    font-size: 1.2em;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+
+.footer {
+  background-color: transparent;
+  grid-area: footer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 95%;
+  height: 100%;
+  margin-left: 2.5%;
+  font-family: Ubuntu; }
+  .footer div:nth-child(1n+1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    height: 90%;
+    background-color: transparent; }
+  .footer div:nth-child(1) {
+    width: 40%; }
+  .footer div:nth-child(2) {
+    width: 20%; }
+    .footer div:nth-child(2) i {
+      width: 60%;
+      height: 80%;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #4361ee;
+      font-family: Ubuntu;
+      font-style: normal;
+      color: white;
+      font-size: 1.2em; }
+  .footer div:nth-child(3) {
+    width: 40%;
+    border: none;
+    display: flex;
+    justify-content: center; }
+    .footer div:nth-child(3) i:nth-child(2) {
+      width: 20%;
+      background-color: transparent;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 5%; }
+      .footer div:nth-child(3) i:nth-child(2) i:nth-child(1n+1) {
+        margin: 0;
+        width: 20%;
+        height: 50%;
+        background-color: white;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  grid-area: main;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .main div {
+    border-radius: 10px;
+    background-color: #e9ecef;
+    width: 30%;
+    height: 100%; }
+  .main div:nth-child(1n+1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .main div:nth-child(1n+1) div:nth-child(1) {
+      height: 70%;
+      width: 95%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+    .main div:nth-child(1n+1) span {
+      width: 90%;
+      height: 10%;
+      background-color: transparent;
+      margin: 0 auto;
+      color: black;
+      text-Align: center;
+      display: inline;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em; }
+      .main div:nth-child(1n+1) span span {
+        font-size: 2em; }
+    .main div:nth-child(1n+1) button {
+      width: 60%;
+      height: 10%;
+      background-color: transparent;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      border: none;
+      font-size: 1.3em; }
+      .main div:nth-child(1n+1) button i {
+        display: inline-block;
+        background-image: url("./icons/down.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        float: right;
+        border: none; }
+
+.first_Card div:nth-child(1) {
+  background-image: url("./icons/one.svg"); }
+
+.second_Card div:nth-child(1) {
+  background-image: url("./icons/two.svg"); }
+
+.third_Card div:nth-child(1) {
+  background-image: url("./icons/three.svg"); }
+
+/*# sourceMappingURL=style.css.map */
